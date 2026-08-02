@@ -1,0 +1,42 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/Voxer/voxer.io.api.docs
+summary: >-
+  Voxer ships first-party mobile SDKs (the "Voxer SDK", announced in beta June
+  2021) that embed Voxer live-audio / walkie-talkie push-to-talk into third
+  party apps. Public API reference documentation for both platforms is
+  published in the Voxer GitHub org (Dokka/Jazzy markdown). The SDK binaries
+  are distributed through a gated early-access program (per-client appId +
+  appSecret), not through public package registries: Maven Central has no
+  com.rebelvox / voxersdk artifacts and CocoaPods has no VoxerSDK pod
+  (verified 2026-07-21). The early-access sign-up page (get.voxer.com/sdk)
+  now returns 404, so the program may be dormant.
+packages:
+- language: kotlin
+  platform: android
+  name: Voxer Android SDK (com.rebelvox.voxersdk)
+  version: v1.0
+  registry: none (private early-access distribution)
+  docs: https://github.com/Voxer/voxer.io.api.docs/tree/master/android/v1.0
+  official: true
+- language: swift
+  platform: ios
+  name: Voxer iOS SDK
+  version: v0.4
+  registry: none (private early-access distribution)
+  docs: https://github.com/Voxer/voxer.io.api.docs/tree/master/ios/v0.4
+  official: true
+registries_probed:
+- registry: maven-central
+  query: voxersdk, rebelvox
+  result: none
+- registry: cocoapods
+  query: VoxerSDK
+  result: none
+- registry: npm
+  query: maintainer:voxer, voxer
+  result: >-
+    no first-party client SDKs; the npm package "voxer" is an unrelated
+    vite+electron framework by a third party. The Voxer GitHub org's npm-era
+    open source (poolee, zag, corevis, nagios plugins) is infrastructure
+    tooling, not API client libraries.

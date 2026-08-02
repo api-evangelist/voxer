@@ -1,9 +1,29 @@
 aid: voxer
 name: Voxer
-description: 'Voxer is a company surfaced as a portfolio company of ivp and added to the API Evangelist
-  network as a stub for enrichment. Sector: communications. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Voxer is a San Francisco push-to-talk (PTT) communication company whose
+  walkie-talkie app combines live voice, voice messaging, text, photos, video,
+  and location sharing across iPhone, Android, and the web. Voxer Business
+  provides secure private PTT networks for frontline teams in hospitality,
+  transportation, field services, construction, and logistics, and Voxer Pro +
+  AI adds AI message summaries. Voxer publishes no public REST API; its
+  developer surface is a gated early-access mobile SDK (Android/iOS, with
+  public API reference docs on GitHub) plus a Zapier integration. Backed by
+  IVP.
 url: https://raw.githubusercontent.com/api-evangelist/voxer/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/1320338?v=4
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,10 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Communications
+- Push-To-Talk
+- Walkie-Talkie
+- Voice
+- Messaging
+- Mobile
+- SDK
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +51,38 @@ maintainers:
 common:
 - type: Website
   url: https://www.voxer.com
+- type: Documentation
+  url: https://github.com/Voxer/voxer.io.api.docs
+- type: GitHubOrganization
+  url: https://github.com/Voxer
+- type: Blog
+  url: https://www.voxer.com/blog/
+- type: Support
+  url: https://support.voxer.com/home
+- type: Pricing
+  url: https://www.voxer.com/plans-and-pricing
+- type: Login
+  url: https://web.voxer.com/
+- type: TermsOfService
+  url: https://www.voxer.com/tos
+- type: PrivacyPolicy
+  url: https://www.voxer.com/privacy
+- type: Integrations
+  url: https://www.voxer.com/zapier
+- type: Packages
+  url: packages/voxer-packages.yml
+- type: SDKs
+  url: packages/voxer-packages.yml
+- type: Authentication
+  url: authentication/voxer-authentication.yml
+- type: LLMsTxt
+  url: llms/voxer-llms.txt
+- type: WellKnown
+  url: well-known/voxer-well-known.yml
+- type: DomainSecurity
+  url: security/voxer-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1

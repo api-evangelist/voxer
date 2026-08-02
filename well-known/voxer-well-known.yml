@@ -1,0 +1,30 @@
+generated: '2026-07-21'
+method: probed
+source: live probes of www.voxer.com
+summary: >-
+  No /.well-known/ discovery documents are published on the Voxer host. All
+  probed paths returned 404 (absence is valid data). The developer/docs/API
+  subdomains (developer.voxer.com, docs.voxer.com, api.voxer.com,
+  status.voxer.com) do not resolve.
+hosts:
+- host: www.voxer.com
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+unresolved_hosts:
+- developer.voxer.com
+- docs.voxer.com
+- api.voxer.com
+- status.voxer.com

@@ -1,0 +1,26 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/Voxer/voxer.io.api.docs/blob/master/android/v1.0/README.md
+docs: https://github.com/Voxer/voxer.io.api.docs
+summary:
+  types: [appCredentials]
+  notes: >-
+    Voxer publishes no public REST API, so there are no OpenAPI securitySchemes
+    to derive. The documented developer surface is the Voxer SDK (Android v1.0,
+    iOS v0.4), whose authentication model is app credentials: every SDK client
+    is provisioned a unique appId + appSecret, which initialize the SDK, and
+    end users then log into the Voxer network with a unique user id via
+    Voxer.getInstance(application).login(username, appId, appSecret). SDK
+    credentials are issued through a gated early-access program, not
+    self-service.
+schemes:
+- name: voxerSdkAppCredentials
+  type: appCredentials
+  description: >-
+    Per-client appId + appSecret pair provisioned by Voxer; required to
+    initialize the SDK and to log a user (unique user id) into the Voxer
+    network.
+  credentials: [appId, appSecret, userId]
+  self_service: false
+  sources:
+  - https://github.com/Voxer/voxer.io.api.docs/blob/master/android/v1.0/README.md

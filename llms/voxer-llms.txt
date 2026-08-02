@@ -1,0 +1,34 @@
+# Voxer
+
+> Voxer is a San Francisco push-to-talk (PTT) communication company whose walkie-talkie app combines live voice, voice messaging, text, photos, videos, GIFs, and location sharing across iPhone, Android, and the web. Voxer Business adds secure private networks for frontline teams (hospitality, transportation, field services, construction, logistics), and Voxer Pro + AI adds AI message summaries. Voxer does not publish a public REST API; its developer surface is a gated early-access mobile SDK plus a Zapier integration.
+
+Voxer was founded by Tom Katis and is backed by IVP among other investors. It is best known for pioneering live "walkie-talkie" audio over IP (Voxer's founders built it after experience with military radio communications).
+
+## Products
+
+- [Voxer for Individuals](https://www.voxer.com/individuals): Free walkie-talkie app with Pro upgrades
+- [Voxer Business](https://www.voxer.com/business): Secure private PTT networks for teams
+- [Voxer AI](https://www.voxer.com/ai): AI-powered message summaries
+- [Plans and Pricing](https://www.voxer.com/plans-and-pricing): Free, Pro + AI, and Business tiers
+- [Voxer for Web](https://web.voxer.com/): Browser client / login
+
+## Developer surface
+
+- [Voxer SDK announcement (beta, 2021)](https://www.voxer.com/blog/voxer-sdk/): Push-to-talk audio button for third-party apps (live audio + walkie-talkie mode)
+- [Voxer SDK API documentation](https://github.com/Voxer/voxer.io.api.docs): Android SDK v1.0 and iOS SDK v0.4 reference (appId/appSecret auth); binaries are early-access, not on public registries
+- [Zapier integration](https://www.voxer.com/zapier): Connect Voxer messages to 1000+ apps (available on Personal, Pro, Business)
+- [GitHub organization](https://github.com/Voxer): Open source infrastructure tooling (poolee, zag, iSPDY, nagios plugins)
+
+## Support and policies
+
+- [Support center](https://support.voxer.com/home): Help center and Zapier getting-started guides
+- [Blog](https://www.voxer.com/blog/): Product and team-communication articles
+- [Terms of Service](https://www.voxer.com/tos)
+- [Privacy Policy](https://www.voxer.com/privacy)
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/voxer/refs/heads/main/apis.yml): APIs.json profile for Voxer
+- [Packages](https://raw.githubusercontent.com/api-evangelist/voxer/refs/heads/main/packages/voxer-packages.yml): First-party SDK inventory
+- [Authentication](https://raw.githubusercontent.com/api-evangelist/voxer/refs/heads/main/authentication/voxer-authentication.yml): SDK app-credential auth profile
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/voxer/refs/heads/main/security/voxer-domain-security.yml): TLS/HSTS/DNS posture probe
